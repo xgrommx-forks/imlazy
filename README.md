@@ -1,14 +1,14 @@
 # imlazy
 
-Laziness is next to Godliness
+[![npm version](https://badge.fury.io/js/imlazy.svg)](https://badge.fury.io/js/imlazy)
+
+###### Functional, declarative, immutable and lazy as you like
 
 ## What is this?
 
 JS library, for dealing with iterables, iterators and generators.
 
-Functional, declarative, immutable and lazy as you like.
-
-imlazy can be used to create iterables, "transform" them (returning new iterables rather than mutating them) or query them as detailed below.
+imlazy can be used to create iterables, "transform" them (returning new iterables rather than mutating them) or query them.
 
 Iterables returned by imlazy are simpy of the form:
 
@@ -39,38 +39,82 @@ Because lazy and immutable! (And also very small!)
 
 - Want to operate on infinite or cicrular data strutures? No problem!
 
-- Want to compose multiple transformations without having to worry about the performance costs of traversing data structures multiple times? No problem!
+- Want to compose multiple transformations without having to worry about traversing data structures multiple times? No problem!
 
 - Scared of your data structures being mutated and having to deal with painful bugs caused by this? No problem!
+
+- Want to be totally awesome? No problem!
+
+## Installation
+
+```bash
+npm i -S imlazy
+```
+
+**NB This library is written in ES2015 and as such you will either need to be using an ES2015 runtime or transpiling your code.**
+
+Preferred method of consumption is through [Rollup](https://github.com/rollup/rollup).
 
 ## Examples
 
 ```javascript
 
-import {filter, makeCircular, range, reduce, take} from 'imlazy';
+import {filter, makeCircular, range, reduce, take} from 'imlazy'
 
 // all functions are autocurried for partial application
-const sum = reduce((val, acc) => val + acc, 0);
-const isEven = x => x % 2 === 0;
+const sum = reduce((val, acc) => val + acc, 0)
+const takeEight = take(8)
+const isEven = x => x % 2 === 0
 
-const positiveIntegers = range(1, Infinity);
-const positiveEvenIntegers = filter(isEven, positiveIntegers);
-const twoFourSix = take(3, positiveEvenIntegers);
-sum(twoFourSix); // => 12
+const positiveIntegers = range(1, Infinity) // => iterableOf(1, 2, 3, 4, 5, 6, 7, 8, ...)
+const positiveEvenIntegers = filter(isEven, positiveIntegers) // => iterableOf(2, 4, 6, 8, ...)
+const twoFourSix = take(3, positiveEvenIntegers) // => iterableOf(2, 4, 6)
+sum(twoFourSix) // => 12
 
 // NB twoFourSix is an immutable lazy iterable
 // convert to an array like this
-[...twoFourSix]; // => [2, 4, 6]
+[...twoFourSix] // => [2, 4, 6]
 
-const oneTwoThree = range(1, 3);
-const circularOneTwoThree = makeCircular(oneTwoThree);
-[...take(8, circularOneTwoThree)]; // => [1, 2, 3, 1, 2, 3, 1, 2]
+const oneTwoThree = range(1, 3) // => iterableOf(1, 2, 3)
+const circularOneTwoThree = makeCircular(oneTwoThree) // => iterableOf(1, 2, 3, 1, 2, 3, 1, 2, 3, ...)
+takeEight(circularOneTwoThree) // => iterableOf(1, 2, 3, 1, 2, 3, 1, 2)
+
+const fibonacciGenerator = function* () {
+  let [a, b] = [0, 1]
+  while (true) yield ([a, b] = [b, a + b])[0]
+}
+
+takeEight(fibonacciGenerator()) // => iterableOf(1, 1, 2, 3, 5, 8, 13, 21)
 
 ```
 
+## [Click Here for Documentation](http://benji6.github.io/imlazy/docs/)
+
+## Interoperability
+
+This library works with all native iterable types including the Generator, String, Array, TypedArray, Map and Set types.
+
+In fact anything that has a [Symbol.iterator] property can be processed by this library and that includes custom data structures. For instance, the functions in this library can be used to process [immutable-js](https://github.com/facebook/immutable-js) iterables.
+
+
+## Performance
+
+There is a benchmark in the root of this repo comparing imlazy with Ramda and native array methods. When mapping twice then filtering twice over 1024 values on node 5 with babel es2015-node5 preset here are the results I get:
+
+```bash
+imlazy x 1,373 ops/sec ±8.28% (65 runs sampled)
+native x 3,302 ops/sec ±6.12% (75 runs sampled)
+ramda x 14,924 ops/sec ±8.71% (63 runs sampled)
+Fastest is ramda
+```
+
+Ramda blows the other two out the water and imlazy has the worst performance :(
+
+It is possible to contrive situations where the relative performance of imlazy would be better, for instance if only a small portion of the test data were actually ever used.
+
 ## Project Scope
 
-At the moment the scope of this project is limited to manipulating iterables using the iterator protocols. It does not expose standard FP functions like curry, compose, identity, flip, tap etc. It also does not prescribe a notion of equality, so iterables cannot be treated as sets and functions like [includes](https://tc39.github.io/Array.prototype.includes/), [has](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has), or [contains](http://ramdajs.com/docs/#contains) cannot exist. This could change going forwards.
+At the moment the scope of this project is limited to manipulating iterables using the iteration protocols. It does not expose standard FP functions like curry, compose, identity, flip, tap etc. It also does not prescribe a notion of equality, so functions like [includes](https://tc39.github.io/Array.prototype.includes/), [has](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has), or [contains](http://ramdajs.com/docs/#contains) cannot exist. This could change going forwards.
 
 ## Influences
 
