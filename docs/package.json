@@ -1,9 +1,11 @@
 {
   "name": "imlazy",
-  "version": "0.0.0",
-  "description": "Laziness is next to Godliness",
+  "version": "1.0.1",
+  "description": "Functional, declarative, immutable and lazy as you like",
   "main": "src/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
+    "benchmark": "node_modules/.bin/babel-node benchmark",
     "docs": "node_modules/.bin/esdoc -c esdoc.json",
     "test": "node_modules/.bin/babel-node test"
   },
@@ -16,12 +18,42 @@
   "bugs": {
     "url": "https://github.com/benji6/ilazy/issues"
   },
+  "keywords": [
+    "circular",
+    "data",
+    "declarative",
+    "functional",
+    "immutable",
+    "infinite",
+    "iterable",
+    "iteration",
+    "iterator",
+    "lazy",
+    "protocol",
+    "sequence",
+    "structure"
+  ],
   "homepage": "https://github.com/benji6/ilazy",
   "devDependencies": {
     "babel": "^6.0.15",
-    "babel-cli": "^6.1.2",
+    "babel-cli": "^6.1.18",
     "babel-preset-es2015-node5": "^1.0.0",
+    "benchmark": "^1.0.0",
     "esdoc": "^0.4.3",
+    "immutable": "^3.7.5",
+    "ramda": "^0.18.0",
     "tape": "^4.2.2"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "optional": [
+            "runtime"
+          ]
+        }
+      ]
+    ]
   }
 }
