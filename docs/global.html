@@ -1,0 +1,3760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Global</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Global</h1>
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2></h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="adjust"><span class="type-signature"></span>adjust<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with the given function applied to the value at the given index
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line27">line 27</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>adjust(x => 10 * x,
+       1,
+       range(1, Infinity)) // => iterableOf(1, 20, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="append"><span class="type-signature"></span>append<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable of the given iterable followed by the given value
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line41">line 41</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>append(4,
+       [1, 2, 3]) // => iterableOf(1, 2, 3, 4)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="assoc"><span class="type-signature"></span>assoc<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with the given value at the given index
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line57">line 57</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>assoc(2,
+      42,
+      range(1, Infinity)) // => iterableOf(1, 2, 42, 4, 5, 6, 7, 8, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="concat"><span class="type-signature"></span>concat<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable of the first given iterable followed by the second given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line71">line 71</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>concat([100, 200],
+       range(1, Infinity)) // => iterableOf(100, 200, 1, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="drop"><span class="type-signature"></span>drop<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable of the given iterable without the first n elements
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line85">line 85</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>drop(2,
+     range(1, Infinity)) // => iterableOf(3, 4, 5, 6, 7, 8, 9, 10, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="dropWhile"><span class="type-signature"></span>dropWhile<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable by applying the given function to each value in the given iterable only yielding values when false is returned
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line99">line 99</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>dropWhile(x => x &lt;= 2,
+          [1, 2, 3, 4, 3, 2, 1]) // => iterableOf(3, 4, 3, 2, 1)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="every"><span class="type-signature"></span>every<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Applies the given function to each value in the given iterable until that function returns falsy, in which case false is returned. If the iterable is completely traversed and falsy is never returned by the given function then true is returned
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line118">line 118</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>every(x => x &lt;= 20,
+      [1, 2, 3, 4]) // => true
+every(x => x &lt;= 2,
+      [1, 2, 3, 4]) // => false</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="filter"><span class="type-signature"></span>filter<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable containing only values from the given iterable where the given function applied to that value returns truthy
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line132">line 132</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>filter(x => x % 2 === 0,
+       range(1, Infinity)) // => iterableOf(2, 4, 6, 8, 12, 14, 16, 18, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="find"><span class="type-signature"></span>find<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Applies the given function to each value in the given iterable. If truthy is returned then find returns the value from the iterable and if the end of the iterable is reached with truthy never returned then find returns undefined
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line147">line 147</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>find(x => x % 2 === 0,
+     range(1, Infinity)) // => 2
+find(x => x === 0,
+     [1, 2, 3, 4, 5, 6]) // => undefined</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="findIndex"><span class="type-signature"></span>findIndex<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Applies the given function to each value in the given iterable. If truthy is returned then findIndex returns the index from the iterable and if the end of the iterable is reached with truthy never returned then findIndex returns undefined
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line162">line 162</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>findIndex(x => x % 2 === 0,
+          range(1, Infinity) // => 1
+findIndex(x => x === 0,
+          [1, 2, 3]) // => undefined</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="insert"><span class="type-signature"></span>insert<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with the given value inserted at the given index in the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line197">line 197</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>insert(1,
+       42,
+       range(1, Infinity)) // => iterableOf(1, 42, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="insertAll"><span class="type-signature"></span>insertAll<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with the values in the first given iterable inserted at the given index in the last given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line216">line 216</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>insertAll(1,
+          [42, 24, 3],
+          [1, 2, 3]) // => iterableOf(1, 42, 24, 3, 2, 3)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="intersperse"><span class="type-signature"></span>intersperse<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with the given value interspersed at every other index in the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line233">line 233</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>intersperse(42,
+            range(1, Infinity)) // => iterableOf(1, 42, 2, 42, 3, 42, 4, 42, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="iterableFrom"><span class="type-signature"></span>iterableFrom<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with values identical to the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line246">line 246</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>interableFrom([1, 2, 3]) // => iterableOf(1, 2, 3)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="iterate"><span class="type-signature"></span>iterate<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns an infinite iterable with the first value as the given initial value and all other values defined by applying the given function to the previous value
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line267">line 267</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>iterate(x => 2 * x,
+        1) // => iterableOf(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="map"><span class="type-signature"></span>map<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new Iterable by applying the given function to every value in the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line308">line 308</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>map(x => 2 * x,
+    range(1, Infinity)) // => iterableOf(2, 4, 6, 8, 10, 12, 14, 16, 18, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="nth"><span class="type-signature"></span>nth<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns the value at the given index in the given iterable, or undefined if no value exists
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line321">line 321</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>nth(90,
+    range(1, Infinity)) // => 90</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="partition"><span class="type-signature"></span>partition<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns an iterable of two iterables, the first iterable contains every value from the given iterable where the given function returns truthy and teh second iterable contains every value from the given iterable where the given function returns falsy
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line335">line 335</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>partition(x => x % 2 === 0,
+          [1, 2, 3, 4]) // => iterableOf(iterableOf(2, 4), iterableOf(1, 3))</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="prepend"><span class="type-signature"></span>prepend<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with the given value prepended to the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line354">line 354</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>prepend(42,
+        range(1, Infinity)) // => iterableOf(42, 1, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="range"><span class="type-signature"></span>range<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable starting with the first given value and either descending or ascending in integer steps until the yielded value is equal to the second given value
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line369">line 369</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>range(1, 3)) // => iterableOf(1, 2, 3)
+range(1, Infinity)) // => iterableOf(1, 2, 3, 4, 5, 6, 7, 8, ...)
+range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="reduce"><span class="type-signature"></span>reduce<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a value by applying the given function with the accumulated value (starting with the given initialValue) and the current value for every value in the given iterable. The value returned from each call to the given function becomes the accumulated value for the next time it is called
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line385">line 385</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>reduce((acc, val) => acc + val,
+       0,
+       [1, 2, 3, 4]) // => 10</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="remove"><span class="type-signature"></span>remove<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns an iterable of the given iterable, excluding values from the given index for the given count
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line402">line 402</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>remove(2,
+       4,
+       range(1, Infinity)) // => iterableOf(1, 2, 7, 8, 9, 10, 11, 12, ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="slice"><span class="type-signature"></span>slice<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns an iterable of the given iterable starting at the given startIndex and ending one before the given endIndex
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line445">line 445</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>slice(2,
+      4,
+      range(1, Infinity)) // => iterableOf(3, 4)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="some"><span class="type-signature"></span>some<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Applies the given function to each value in the given iterable until that function returns truthy, in which case true is returned. If the iterable is completely traversed and truthy is never returned by the given function then false is returned
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line465">line 465</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>some(x => x === 20,
+     [1, 2, 3, 4]) // => false
+some(x => x === 2,
+     [1, 2, 3, 4]) // => true</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="sort"><span class="type-signature"></span>sort<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable of the given iterable sorted based on the return value of the given function when called with any two values from the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line479">line 479</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>sort((a, b) => a - b,
+     [5, 7, 3, 2]) // => iterableOf(2, 3, 5, 7)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="splitEvery"><span class="type-signature"></span>splitEvery<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable comprised by iterables created from the given iterable of length specified by the given length
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line491">line 491</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const splitEveryThree = splitEvery(3)
+splitEveryThree([1, 2, 3, 4]) // => iterableOf(iterableOf(1, 2, 3), iterableOf(4))
+splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterableOf(4, 5, 6), iterableOf(7, 8, 9), ...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="take"><span class="type-signature"></span>take<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns an iterable of the first n elements of the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line520">line 520</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>take(3,
+     range(1, Infinity)) // => iterableOf(1, 2, 3)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="takeWhile"><span class="type-signature"></span>takeWhile<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns an iterable of the all elements of the given iterable until the given function returns falsy when called on the value of that element
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line534">line 534</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>takeWhile(x => x &lt; 5,
+          range(1, Infinity)) // => iterableOf(1, 2, 3, 4)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="zip"><span class="type-signature"></span>zip<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with values as iterables of length 2 with the first element as the corresponding element from the first given iterable and the second element as the corresponding element from the second given iterable. The length of the returned iterable is the same as the shortest iterable supplied
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line579">line 579</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>zip([2, 3, 5, 7],
+    range(1, Infinity)) // => iterableOf(iterableOf(2, 1),
+                        //               iterableOf(3, 2),
+                        //               iterableOf(5, 3),
+                        //               iterableOf(7, 4))</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="zipWith"><span class="type-signature"></span>zipWith<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with values as the result of calling the given function with the corresponding element from the first and second given iterables respectively. The length of the returned iterable is the same as the shortest iterable supplied
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line602">line 602</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>zipWith((a, b) => a + b
+        [2, 3, 5, 7],
+        range(1, Infinity)) // => iterableOf(3, 5, 8, 11)</code></pre>
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="flatten"><span class="type-signature"></span>flatten<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Takes an iterable and recursively unnests any values which are iterables
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line173">line 173</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>flatten([1, [2, [3, [[4]]]], [range(1, Infinity)]) // => iterableOf(1, 2, 4, 4, 1, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="head"><span class="type-signature"></span>head<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Any}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns the first value from an iterable
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line184">line 184</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Any</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>head(range(1, Infinity)) // => 1</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="iterableOf"><span class="type-signature"></span>iterableOf<span class="signature">()</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns an iterable of the arguments passed
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>...values</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Any</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line254">line 254</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>[...interableOf(1, 2, 3)] // => [1, 2, 3]</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="last"><span class="type-signature"></span>last<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Any}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns the last value in the given iterable
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line279">line 279</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Any</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>last([1, 2, 3]) // => 3</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="length"><span class="type-signature"></span>length<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns the number of elements in the given iterable
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line287">line 287</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>length(range(1, 100)) // => 100</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="makeCircular"><span class="type-signature"></span>makeCircular<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns a new iterable by infinitely repeating the given iterable
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line295">line 295</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>makeCircular([1, 2, 3]) // => iterableOf(1, 2, 3, 1, 2, 3, 1, 2, 3, ...)</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="repeat"><span class="type-signature"></span>repeat<span class="signature">(value, count)</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns a new iterable where every value is the given value and there are as many values as the given count
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>value</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>count</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line422">line 422</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const repeat42 = repeat(42)
+repeat42(3)) // => iterableOf(42, 42, 42)
+repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="reverse"><span class="type-signature"></span>reverse<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns a new iterable which is the reverse of the given iterable
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line432">line 432</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>reverse([1, 2, 3]) // => iterableOf(3, 2, 1)</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="tail"><span class="type-signature"></span>tail<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns a new iterable of all but the first element of the given iterable
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line506">line 506</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>tail(range(1, Infinity)) // => iterableOf(2, 3, 4, 5, 6, 7, 8, 9, ...)</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="transpose"><span class="type-signature"></span>transpose<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns a new iterable which is a transposition of the given iterable (columns and rows swapped)
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line548">line 548</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>transpose([[1, 2, 3],
+                    [4, 5, 6],
+                    [7, 8, 9]]) // => iterableOf(iterableOf(1, 4, 7),
+                                //               iterableOf(2, 5, 8),
+                                //               iterableOf(3, 6, 9))</code></pre>
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#adjust">adjust</a></li><li><a href="global.html#append">append</a></li><li><a href="global.html#assoc">assoc</a></li><li><a href="global.html#concat">concat</a></li><li><a href="global.html#drop">drop</a></li><li><a href="global.html#dropWhile">dropWhile</a></li><li><a href="global.html#every">every</a></li><li><a href="global.html#filter">filter</a></li><li><a href="global.html#find">find</a></li><li><a href="global.html#findIndex">findIndex</a></li><li><a href="global.html#flatten">flatten</a></li><li><a href="global.html#head">head</a></li><li><a href="global.html#insert">insert</a></li><li><a href="global.html#insertAll">insertAll</a></li><li><a href="global.html#intersperse">intersperse</a></li><li><a href="global.html#iterableFrom">iterableFrom</a></li><li><a href="global.html#iterableOf">iterableOf</a></li><li><a href="global.html#iterate">iterate</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#length">length</a></li><li><a href="global.html#makeCircular">makeCircular</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#nth">nth</a></li><li><a href="global.html#partition">partition</a></li><li><a href="global.html#prepend">prepend</a></li><li><a href="global.html#range">range</a></li><li><a href="global.html#reduce">reduce</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#repeat">repeat</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#some">some</a></li><li><a href="global.html#sort">sort</a></li><li><a href="global.html#splitEvery">splitEvery</a></li><li><a href="global.html#tail">tail</a></li><li><a href="global.html#take">take</a></li><li><a href="global.html#takeWhile">takeWhile</a></li><li><a href="global.html#transpose">transpose</a></li><li><a href="global.html#zip">zip</a></li><li><a href="global.html#zipWith">zipWith</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Dec 21 2015 21:19:57 GMT+0000 (GMT)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
