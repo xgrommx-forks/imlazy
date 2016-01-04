@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/imlazy.svg)](https://badge.fury.io/js/imlazy)
 [![Build Status](https://travis-ci.org/benji6/imlazy.svg?branch=master)](https://travis-ci.org/benji6/imlazy)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 ###### Functional, declarative, immutable and lazy as you like
 
@@ -52,7 +53,7 @@ Because lazy and immutable! (And also very small!)
 npm i -S imlazy
 ```
 
-imlazy is written in the node 5 subset of ES2015. If you want to run this code in an environment that doesn't support at least this subset I'm afraid you are on your own as I haven't found a satisfactory solution to this problem. If you have any ideas on how to solve this that would be massively appreciated.
+***N.B. imlazy is written in the node 5 subset of ES2015. If you want to run this code in an environment that doesn't support at least this subset I'm afraid you are on your own as I haven't found a satisfactory solution to this problem. If you have any ideas on how to solve this that would be massively appreciated.***
 
 ## Examples
 

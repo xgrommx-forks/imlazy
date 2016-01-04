@@ -1,14 +1,20 @@
-'use strict'
 const Immutable = require('immutable')
 const test = require('ava')
-const src = require('./')
+const src = require('../')
+import {
+  add,
+  double,
+  isFrozenToArray,
+  oneTwoThree,
+  oneTwoThreeFour,
+  positiveIntegers,
+  takeEight,
+  takeThree
+} from './_tools'
 
-const adjust = src.adjust
 const append = src.append
 const assoc = src.assoc
 const concat = src.concat
-const drop = src.drop
-const dropWhile = src.dropWhile
 const every = src.every
 const filter = src.filter
 const find = src.find
@@ -18,7 +24,6 @@ const head = src.head
 const insert = src.insert
 const insertAll = src.insertAll
 const intersperse = src.intersperse
-const isEmpty = src.isEmpty
 const iterableFrom = src.iterableFrom
 const iterableOf = src.iterableOf
 const iterate = src.iterate
@@ -30,68 +35,30 @@ const nth = src.nth
 const partition = src.partition
 const prepend = src.prepend
 const range = src.range
-const reduce = src.reduce
-const reject = src.reject
 const remove = src.remove
 const repeat = src.repeat
 const reverse = src.reverse
-const slice = src.slice
 const some = src.some
 const sort = src.sort
 const splitEvery = src.splitEvery
-const tail = src.tail
-const take = src.take
 const takeWhile = src.takeWhile
 const transpose = src.transpose
 const zip = src.zip
 const zipWith = src.zipWith
-const oneTwoThree = Object.freeze([1, 2, 3])
 const threeTwoOne = Object.freeze([3, 2, 1])
-const oneTwoThreeFour = Object.freeze([1, 2, 3, 4])
 const fourThreeTwoOne = Object.freeze([4, 3, 2, 1])
 const fiveFiveFive = Object.freeze([5, 5, 5])
-const positiveIntegers = range(1)(Infinity)
 const negativeIntegers = range(-1)(-Infinity)
 const infiniteIterableOfPositiveIntegers = repeat(positiveIntegers)
-const add = (a, b) => a + b
 const subtract = (a, b) => a - b
-const double = x => x * 2
 const halve = x => x / 2
-const takeThree = take(3)
-const takeEight = take(8)
 const isEven = x => x % 2 === 0
-
-const B = a => b => c => a(b(c))
-
-const isFrozen = t => iterable => (t.throws(() => iterable.a = 1), iterable)
-const toArray = iterable => [...iterable]
-const isFrozenToArray = t => B(toArray)(isFrozen(t))
-const fibonacciGenerator = function * () {
-  var a = 1
-  var b = 1
-  while (true) {
-    yield a
-    const c = a + b
-    a = b
-    b = c
-  }
-}
 
 test('immutable interop', t => {
   const processIterable = isFrozenToArray(t)
   const immutableOneTwoThree = Immutable.List.of(1, 2, 3)
   t.same(processIterable(append(4, immutableOneTwoThree)),
                oneTwoThreeFour)
-})
-
-test('adjust', t => {
-  const processIterable = isFrozenToArray(t)
-  t.same(processIterable(takeEight(adjust(double)(2)(positiveIntegers))),
-               [1, 2, 6, 4, 5, 6, 7, 8])
-  t.same(processIterable(takeEight(adjust(double)(2)(positiveIntegers))),
-               [1, 2, 6, 4, 5, 6, 7, 8])
-  t.same(processIterable(takeEight(adjust(double, 2, fibonacciGenerator()))),
-               [1, 1, 4, 3, 5, 8, 13, 21])
 })
 
 test('append', t => {
@@ -123,27 +90,6 @@ test('concat', t => {
                [-1, -2, -3, -4, -5, -6, -7, -8])
   t.same(processIterable(takeEight(concat(negativeIntegers, negativeIntegers))),
                [-1, -2, -3, -4, -5, -6, -7, -8])
-})
-
-test('drop', t => {
-  const processIterable = isFrozenToArray(t)
-  const dropOne = drop(1)
-  t.same(processIterable(dropOne(oneTwoThreeFour)),
-               [2, 3, 4])
-  t.same(processIterable(dropOne(oneTwoThreeFour)),
-               [2, 3, 4])
-  t.same(processIterable(drop(3)(oneTwoThreeFour)),
-               [4])
-  t.same(processIterable(drop(30, oneTwoThree)),
-               [])
-})
-
-test('dropWhile', t => {
-  const processIterable = isFrozenToArray(t)
-  t.same(processIterable(dropWhile(a => a !== 3)(oneTwoThreeFour)),
-               [3, 4])
-  t.same(processIterable(dropWhile(a => a !== 12321, oneTwoThreeFour)),
-               [])
 })
 
 test('every', t => {
@@ -226,12 +172,6 @@ test('iterableFrom', t => {
   const processIterable = isFrozenToArray(t)
   t.same(processIterable(iterableFrom(oneTwoThree)),
                oneTwoThree)
-})
-
-test('isEmpty', t => {
-  t.is(isEmpty([]), true)
-  t.is(isEmpty([0]), false)
-  t.is(isEmpty(range(1, Infinity)), false)
 })
 
 test('iterableOf', t => {
@@ -317,24 +257,6 @@ test('range', t => {
                threeTwoOne)
 })
 
-test('reduce', t => {
-  const sum = reduce(add)(0)
-  t.same(sum(oneTwoThree),
-               6)
-  t.same(sum(oneTwoThreeFour),
-               10)
-  t.same(reduce(add, 0, oneTwoThreeFour),
-               10)
-})
-
-test('reject', t => {
-  const processIterable = isFrozenToArray(t)
-  t.same(
-    processIterable(take(3, reject(x => x <= 3, range(1, Infinity)))),
-    [4, 5, 6]
-  )
-})
-
 test('remove', t => {
   const processIterable = isFrozenToArray(t)
   t.same(processIterable(takeEight(remove(2)(4)(positiveIntegers))),
@@ -360,29 +282,6 @@ test('reverse', t => {
                threeTwoOne)
 })
 
-test('slice', t => {
-  const sliceFromZero = slice(0)
-  const processIterable = isFrozenToArray(t)
-  t.same(processIterable(sliceFromZero(3)(oneTwoThreeFour)),
-               oneTwoThree)
-  t.same(processIterable(slice(1)(2)(oneTwoThree)),
-               [2])
-  t.same(processIterable(slice(1)(20)(oneTwoThree)),
-               [2, 3])
-  t.same(processIterable(slice(1)(1)(oneTwoThree)),
-               [])
-  t.same(processIterable(slice(20)(100)(oneTwoThree)),
-               [])
-  t.same(processIterable(slice(0)(3)(positiveIntegers)),
-               [1, 2, 3])
-  t.same(processIterable(slice(3)(6)(positiveIntegers)),
-               [4, 5, 6])
-  t.same(processIterable(slice(40)(45)(positiveIntegers)),
-               [41, 42, 43, 44, 45])
-  t.same(processIterable(sliceFromZero(3)(slice(0, Infinity, positiveIntegers))),
-               oneTwoThree)
-})
-
 test('some', t => {
   t.same(some(x => x === 30)(positiveIntegers),
                true)
@@ -405,14 +304,6 @@ test('splitEvery', t => {
                [[1, 2, 3], [4]])
   t.same(processIterable(takeThree(splitEveryThree(positiveIntegers))).map(processIterable),
                [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
-})
-
-test('tail', t => {
-  const processIterable = isFrozenToArray(t)
-  t.same(processIterable(tail([])),
-               [])
-  t.same(processIterable(takeEight(tail(positiveIntegers))),
-               [2, 3, 4, 5, 6, 7, 8, 9])
 })
 
 test('take', t => {
