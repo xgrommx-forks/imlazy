@@ -33,9 +33,7 @@ const curry = f => {
  * @param {Iterable} xs
  * @return {Iterable}
  * @example
- * adjust(x => 10 * x,
- *        1,
- *        range(1, Infinity)) // => iterableOf(1, 20, 3, 4, 5, 6, 7, 8, ...)
+ * adjust(x => 10 * x, 1, range(1, Infinity)) // => iterableOf(1, 20, 3, 4, 5, 6, 7, 8, ...)
  */
 module.exports.adjust = curry((f, a, xs) => createIterable(function * () {
   var i = a
@@ -618,15 +616,16 @@ module.exports.transpose = xss => createIterable(function * () {
  * @param {Iterable} ys
  * @return {Iterable}
  * @example
- * zip([2, 3, 5, 7],
- *     range(1, Infinity)) // => iterableOf(iterableOf(2, 1),
- *                         //               iterableOf(3, 2),
- *                         //               iterableOf(5, 3),
- *                         //               iterableOf(7, 4))
+ * zip([2, 3, 5, 7], range(1, Infinity)) // => iterableOf(
+ *                                       //      iterableOf(2, 1),
+ *                                       //      iterableOf(3, 2),
+ *                                       //      iterableOf(5, 3),
+ *                                       //      iterableOf(7, 4)
+ *                                       //    )
  */
 module.exports.zip = curry((xs, ys) => {
-  const iteratorB = ys[Symbol.iterator]()
   return createIterable(function * () {
+    const iteratorB = ys[Symbol.iterator]()
     for (const x of xs) {
       var next = iteratorB.next()
       var done = next.done
@@ -643,13 +642,15 @@ module.exports.zip = curry((xs, ys) => {
  * @param {Iterable} ys
  * @return {Iterable}
  * @example
- * zipWith((a, b) => a + b
- *         [2, 3, 5, 7],
- *         range(1, Infinity)) // => iterableOf(3, 5, 8, 11)
+ * zipWith(
+ *   (a, b) => a + b
+ *   [2, 3, 5, 7],
+ *   range(1, Infinity)
+ * ) // => iterableOf(3, 5, 8, 11)
  */
 module.exports.zipWith = curry((f, xs, ys) => {
-  const iteratorB = ys[Symbol.iterator]()
   return createIterable(function * () {
+    const iteratorB = ys[Symbol.iterator]()
     for (const x of xs) {
       const next = iteratorB.next()
       const done = next.done
