@@ -59,10 +59,9 @@ npm i -S imlazy
 
 ```javascript
 
-import {filter, makeCircular, range, reduce, take} from 'imlazy'
+import {filter, makeCircular, range, reduce, sum, take} from 'imlazy'
 
 // all functions are autocurried for partial application
-const sum = reduce((val, acc) => val + acc, 0)
 const takeEight = take(8)
 const isEven = x => x % 2 === 0
 
@@ -99,7 +98,7 @@ In fact anything that has a [Symbol.iterator] property can be processed by this 
 
 ## Performance
 
-There is a benchmark in the root of this repo comparing imlazy with Ramda and native array methods. When mapping twice then filtering twice over 1024 values on node 5 with babel es2015-node5 preset here are the results I get:
+There is a benchmark in the root of this repo comparing imlazy with Ramda and native array methods. When mapping twice then filtering twice over 1024 values on node 5 here are the results I get:
 
 ```bash
 imlazy x 2,276 ops/sec ±8.35% (68 runs sampled)
