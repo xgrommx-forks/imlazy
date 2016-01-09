@@ -1863,7 +1863,7 @@ some(x => x === 2,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line521">line 521</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line520">line 520</a>
     </li></ul></dd>
     
 
@@ -1880,8 +1880,75 @@ some(x => x === 2,
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>sort((a, b) => a - b,
-     [5, 7, 3, 2]) // => iterableOf(2, 3, 5, 7)</code></pre>
+    <pre class="prettyprint"><code>sort((a, b) => a - b, [5, 7, 3, 2]) // => iterableOf(2, 3, 5, 7)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="sortBy"><span class="type-signature"></span>sortBy<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable of the given iterable sorted by the return value of the given function when applied to each value
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line531">line 531</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>sortBy(x => x.value, [{value: 7}, {value: 0}, {value: 7}, {value: 3}])
+// => iterableOf({value: 0}, {value: 3}, {value: 7}, {value: 7})</code></pre>
 
 
 
@@ -1931,7 +1998,7 @@ some(x => x === 2,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line533">line 533</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line548">line 548</a>
     </li></ul></dd>
     
 
@@ -2000,7 +2067,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line577">line 577</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line592">line 592</a>
     </li></ul></dd>
     
 
@@ -2068,7 +2135,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line591">line 591</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line606">line 606</a>
     </li></ul></dd>
     
 
@@ -2136,7 +2203,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line637">line 637</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line652">line 652</a>
     </li></ul></dd>
     
 
@@ -2208,7 +2275,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line662">line 662</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line677">line 677</a>
     </li></ul></dd>
     
 
@@ -3748,7 +3815,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line549">line 549</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line564">line 564</a>
     </li></ul></dd>
     
 
@@ -3902,7 +3969,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line561">line 561</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line576">line 576</a>
     </li></ul></dd>
     
 
@@ -4056,7 +4123,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line605">line 605</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line620">line 620</a>
     </li></ul></dd>
     
 
@@ -4125,13 +4192,13 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#adjust">adjust</a></li><li><a href="global.html#append">append</a></li><li><a href="global.html#assoc">assoc</a></li><li><a href="global.html#concat">concat</a></li><li><a href="global.html#drop">drop</a></li><li><a href="global.html#dropWhile">dropWhile</a></li><li><a href="global.html#every">every</a></li><li><a href="global.html#filter">filter</a></li><li><a href="global.html#find">find</a></li><li><a href="global.html#findIndex">findIndex</a></li><li><a href="global.html#flatten">flatten</a></li><li><a href="global.html#head">head</a></li><li><a href="global.html#insert">insert</a></li><li><a href="global.html#insertAll">insertAll</a></li><li><a href="global.html#intersperse">intersperse</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#iterableFrom">iterableFrom</a></li><li><a href="global.html#iterableOf">iterableOf</a></li><li><a href="global.html#iterate">iterate</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#length">length</a></li><li><a href="global.html#makeCircular">makeCircular</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#nth">nth</a></li><li><a href="global.html#partition">partition</a></li><li><a href="global.html#prepend">prepend</a></li><li><a href="global.html#range">range</a></li><li><a href="global.html#reduce">reduce</a></li><li><a href="global.html#reject">reject</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#repeat">repeat</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#some">some</a></li><li><a href="global.html#sort">sort</a></li><li><a href="global.html#splitEvery">splitEvery</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#tail">tail</a></li><li><a href="global.html#take">take</a></li><li><a href="global.html#takeWhile">takeWhile</a></li><li><a href="global.html#transpose">transpose</a></li><li><a href="global.html#zip">zip</a></li><li><a href="global.html#zipWith">zipWith</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#adjust">adjust</a></li><li><a href="global.html#append">append</a></li><li><a href="global.html#assoc">assoc</a></li><li><a href="global.html#concat">concat</a></li><li><a href="global.html#drop">drop</a></li><li><a href="global.html#dropWhile">dropWhile</a></li><li><a href="global.html#every">every</a></li><li><a href="global.html#filter">filter</a></li><li><a href="global.html#find">find</a></li><li><a href="global.html#findIndex">findIndex</a></li><li><a href="global.html#flatten">flatten</a></li><li><a href="global.html#head">head</a></li><li><a href="global.html#insert">insert</a></li><li><a href="global.html#insertAll">insertAll</a></li><li><a href="global.html#intersperse">intersperse</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#iterableFrom">iterableFrom</a></li><li><a href="global.html#iterableOf">iterableOf</a></li><li><a href="global.html#iterate">iterate</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#length">length</a></li><li><a href="global.html#makeCircular">makeCircular</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#nth">nth</a></li><li><a href="global.html#partition">partition</a></li><li><a href="global.html#prepend">prepend</a></li><li><a href="global.html#range">range</a></li><li><a href="global.html#reduce">reduce</a></li><li><a href="global.html#reject">reject</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#repeat">repeat</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#some">some</a></li><li><a href="global.html#sort">sort</a></li><li><a href="global.html#sortBy">sortBy</a></li><li><a href="global.html#splitEvery">splitEvery</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#tail">tail</a></li><li><a href="global.html#take">take</a></li><li><a href="global.html#takeWhile">takeWhile</a></li><li><a href="global.html#transpose">transpose</a></li><li><a href="global.html#zip">zip</a></li><li><a href="global.html#zipWith">zipWith</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Sat Jan 09 2016 19:50:00 GMT+0000 (GMT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Sat Jan 09 2016 21:46:22 GMT+0000 (GMT)
 </footer>
 
 <script> prettyPrint(); </script>
