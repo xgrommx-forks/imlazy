@@ -1,14 +1,16 @@
 {
   "name": "imlazy",
-  "version": "3.0.3",
+  "version": "4.0.0",
   "description": "Functional, declarative, immutable and lazy as you like",
   "main": "index.js",
   "scripts": {
     "benchmark": "node benchmark",
     "docs": "jsdoc index.js -d docs",
-    "test": "concurrently standard ava",
+    "spec": "ava",
+    "test": "concurrently standard 'npm run spec'",
     "watch-docs": "nodemon --watch index.js --exec npm run docs",
-    "watch-test": "nodemon --exec npm test"
+    "watch-spec": "nodemon --exec npm run spec",
+    "watch-test": "nodemon --exec npm t"
   },
   "repository": {
     "type": "git",
@@ -36,12 +38,13 @@
   ],
   "homepage": "https://github.com/benji6/imlazy",
   "devDependencies": {
-    "ava": "^0.13.0",
-    "benchmark": "^1.0.0",
-    "concurrently": "^2.0.0",
-    "immutable": "^3.7.5",
+    "ava": "^0.16.0",
+    "benchmark": "^2.1.0",
+    "concurrently": "^2.2.0",
+    "immutable": "^3.8.1",
     "jsdoc": "^3.4.0",
-    "ramda": "^0.20.1",
-    "standard": "^5.4.1"
+    "nodemon": "^1.9.2",
+    "ramda": "^0.22.1",
+    "standard": "^7.1.2"
   }
 }
