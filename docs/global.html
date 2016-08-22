@@ -140,7 +140,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line36">line 36</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line56">line 56</a>
     </li></ul></dd>
     
 
@@ -157,7 +157,7 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>adjust(x => 10 * x, 1, range(1, Infinity)) // => iterableOf(1, 20, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+    <pre class="prettyprint"><code>adjust(x => 10 * x, 1, range(1, Infinity)) // => (1 20 3 4 5 6 7 8 9 10...)</code></pre>
 
 
 
@@ -207,7 +207,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line50">line 50</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line69">line 69</a>
     </li></ul></dd>
     
 
@@ -224,8 +224,7 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>append(4,
-       [1, 2, 3]) // => iterableOf(1, 2, 3, 4)</code></pre>
+    <pre class="prettyprint"><code>append(4, [1, 2, 3]) // => (1 2 3 4)</code></pre>
 
 
 
@@ -275,7 +274,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line64">line 64</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line83">line 83</a>
     </li></ul></dd>
     
 
@@ -292,7 +291,7 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>assoc(2, 42, range(1, Infinity)) // => iterableOf(1, 2, 42, 4, 5, 6, 7, 8, ...)</code></pre>
+    <pre class="prettyprint"><code>assoc(2, 42, range(1, Infinity)) // => (1 2 42 4 5 6 7 8 9 10...)</code></pre>
 
 
 
@@ -342,7 +341,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line78">line 78</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line97">line 97</a>
     </li></ul></dd>
     
 
@@ -360,7 +359,7 @@
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>concat([100, 200],
-       range(1, Infinity)) // => iterableOf(100, 200, 1, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+       range(1, Infinity)) // => (100 200 1 2 3 4 5 6 7 8...)</code></pre>
 
 
 
@@ -410,7 +409,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line91">line 91</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line110">line 110</a>
     </li></ul></dd>
     
 
@@ -427,7 +426,7 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>drop(2, range(1, Infinity)) // => iterableOf(3, 4, 5, 6, 7, 8, 9, 10, ...)</code></pre>
+    <pre class="prettyprint"><code>drop(2, range(1, Infinity)) // => (3 4 5 6 7 8 9 10 11 12...)</code></pre>
 
 
 
@@ -477,7 +476,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line106">line 106</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line125">line 125</a>
     </li></ul></dd>
     
 
@@ -494,7 +493,7 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>dropWhile(x => x &lt;= 2, [1, 2, 3, 4, 3, 2, 1]) // => iterableOf(3, 4, 3, 2, 1)</code></pre>
+    <pre class="prettyprint"><code>dropWhile(x => x &lt;= 2, [1, 2, 3, 4, 3, 2, 1]) // => (3 4 3 2 1)</code></pre>
 
 
 
@@ -544,7 +543,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line131">line 131</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line150">line 150</a>
     </li></ul></dd>
     
 
@@ -614,7 +613,7 @@ every(x => x &lt;= 2,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line146">line 146</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line165">line 165</a>
     </li></ul></dd>
     
 
@@ -639,7 +638,7 @@ every(x => x &lt;= 2,
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>filter(x => x % 2 === 0,
-       range(1, Infinity)) // => iterableOf(2, 4, 6, 8, 10, 12, 14, 16, ...)</code></pre>
+       range(1, Infinity)) // => (2 4 6 8 10 12 14 16 18 20...)</code></pre>
 
 
 
@@ -689,7 +688,7 @@ every(x => x &lt;= 2,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line161">line 161</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line180">line 180</a>
     </li></ul></dd>
     
 
@@ -759,7 +758,7 @@ find(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line176">line 176</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line195">line 195</a>
     </li></ul></dd>
     
 
@@ -829,7 +828,7 @@ findIndex(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line211">line 211</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line249">line 249</a>
     </li></ul></dd>
     
 
@@ -848,7 +847,7 @@ findIndex(x => x === 0,
     
     <pre class="prettyprint"><code>insert(1,
        42,
-       range(1, Infinity)) // => iterableOf(1, 42, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+       range(1, Infinity)) // => (1 42 2 3 4 5 6 7 8 9...)</code></pre>
 
 
 
@@ -861,143 +860,6 @@ findIndex(x => x === 0,
 
 <div class="description">
     Returns a new iterable with the values in the first given iterable inserted at the given index in the last given iterable
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line230">line 230</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>insertAll(1,
-          [42, 24, 3],
-          [1, 2, 3]) // => iterableOf(1, 42, 24, 3, 2, 3)</code></pre>
-
-
-
-        
-            
-<h4 class="name" id="intersperse"><span class="type-signature"></span>intersperse<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Returns a new iterable with the given value interspersed at every other index in the given iterable
-</div>
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line247">line 247</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-    <h5>Example</h5>
-    
-    <pre class="prettyprint"><code>intersperse(42,
-            range(1, Infinity)) // => iterableOf(1, 42, 2, 42, 3, 42, 4, 42, ...)</code></pre>
-
-
-
-        
-            
-<h4 class="name" id="iterableFrom"><span class="type-signature"></span>iterableFrom<span class="type-signature"></span></h4>
-
-
-
-
-<div class="description">
-    Returns a new iterable with values identical to the given iterable
 </div>
 
 
@@ -1052,7 +914,144 @@ findIndex(x => x === 0,
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>interableFrom([1, 2, 3]) // => iterableOf(1, 2, 3)</code></pre>
+    <pre class="prettyprint"><code>insertAll(1,
+          [42, 24, 3],
+          [1, 2, 3]) // => (1 42 24 3 2 3)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="intersperse"><span class="type-signature"></span>intersperse<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with the given value interspersed at every other index in the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line289">line 289</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>intersperse(42,
+            range(1, Infinity)) // => (1 42 2 42 3 42 4 42 5 42...)</code></pre>
+
+
+
+        
+            
+<h4 class="name" id="iterableFrom"><span class="type-signature"></span>iterableFrom<span class="type-signature"></span></h4>
+
+
+
+
+<div class="description">
+    Returns a new iterable with values identical to the given iterable
+</div>
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line312">line 312</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>interableFrom([1, 2, 3]) // => (1 2 3)</code></pre>
 
 
 
@@ -1102,7 +1101,7 @@ findIndex(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line291">line 291</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line333">line 333</a>
     </li></ul></dd>
     
 
@@ -1120,7 +1119,7 @@ findIndex(x => x === 0,
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>iterate(x => 2 * x,
-        1) // => iterableOf(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, ...)</code></pre>
+        1) // => (1 2 4 8 16 32 64 128 256 512...)</code></pre>
 
 
 
@@ -1170,7 +1169,7 @@ findIndex(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line332">line 332</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line379">line 379</a>
     </li></ul></dd>
     
 
@@ -1187,8 +1186,10 @@ findIndex(x => x === 0,
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>map(x => 2 * x,
-    range(1, Infinity)) // => iterableOf(2, 4, 6, 8, 10, 12, 14, 16, 18, ...)</code></pre>
+    <pre class="prettyprint"><code>map(
+  x => 2 * x,
+  range(1, Infinity)
+) // => (2 4 6 8 10 12 14 16 18 20...)</code></pre>
 
 
 
@@ -1238,7 +1239,7 @@ findIndex(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line345">line 345</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line392">line 392</a>
     </li></ul></dd>
     
 
@@ -1306,7 +1307,7 @@ findIndex(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line359">line 359</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line406">line 406</a>
     </li></ul></dd>
     
 
@@ -1324,7 +1325,7 @@ findIndex(x => x === 0,
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>partition(x => x % 2 === 0,
-          [1, 2, 3, 4]) // => iterableOf(iterableOf(2, 4), iterableOf(1, 3))</code></pre>
+          [1, 2, 3, 4]) // => ((2 4) (1 3))</code></pre>
 
 
 
@@ -1374,7 +1375,7 @@ findIndex(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line378">line 378</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line425">line 425</a>
     </li></ul></dd>
     
 
@@ -1392,7 +1393,7 @@ findIndex(x => x === 0,
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>prepend(42,
-        range(1, Infinity)) // => iterableOf(42, 1, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+        range(1, Infinity)) // => (42 1 2 3 4 5 6 7 8 9...)</code></pre>
 
 
 
@@ -1442,7 +1443,7 @@ findIndex(x => x === 0,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line393">line 393</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line440">line 440</a>
     </li></ul></dd>
     
 
@@ -1459,9 +1460,9 @@ findIndex(x => x === 0,
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>range(1, 3)) // => iterableOf(1, 2, 3)
-range(1, Infinity)) // => iterableOf(1, 2, 3, 4, 5, 6, 7, 8, ...)
-range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</code></pre>
+    <pre class="prettyprint"><code>range(1, 3)) // => (1 2 3)
+range(1, Infinity)) // => (1 2 3 4 5 6 7 8 9 10...)
+range(-1, -Infinity)) // => (-1 -2 -3 -4 -5 -6 -7 -8 -9 -10...)</code></pre>
 
 
 
@@ -1511,7 +1512,7 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line409">line 409</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line456">line 456</a>
     </li></ul></dd>
     
 
@@ -1580,7 +1581,7 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line425">line 425</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line474">line 474</a>
     </li></ul></dd>
     
 
@@ -1604,8 +1605,10 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>reject(x => x % 2 === 0,
-       range(1, Infinity)) // => iterableOf(1, 3, 5, 7, 9, 11, 13, 15, ...)</code></pre>
+    <pre class="prettyprint"><code>reject(
+  x => x % 2 === 0,
+  range(1, Infinity)
+) // => (1 3 5 7 9 11 13 15 17 19...)</code></pre>
 
 
 
@@ -1655,7 +1658,7 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line440">line 440</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line487">line 487</a>
     </li></ul></dd>
     
 
@@ -1672,9 +1675,7 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>remove(2,
-       4,
-       range(1, Infinity)) // => iterableOf(1, 2, 7, 8, 9, 10, 11, 12, ...)</code></pre>
+    <pre class="prettyprint"><code>remove(2, 4, range(1, Infinity)) // => (1 2 7 8 9 10 11 12 13 14...)</code></pre>
 
 
 
@@ -1724,7 +1725,7 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line483">line 483</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line530">line 530</a>
     </li></ul></dd>
     
 
@@ -1743,7 +1744,7 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
     
     <pre class="prettyprint"><code>slice(2,
       4,
-      range(1, Infinity)) // => iterableOf(3, 4)</code></pre>
+      range(1, Infinity)) // => (3 4)</code></pre>
 
 
 
@@ -1793,7 +1794,7 @@ range(-1, -Infinity)) // => iterableOf(-1, -2, -3, -4, -5, -6, -7, -8, ...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line505">line 505</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line552">line 552</a>
     </li></ul></dd>
     
 
@@ -1863,7 +1864,7 @@ some(x => x === 2,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line518">line 518</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line565">line 565</a>
     </li></ul></dd>
     
 
@@ -1880,7 +1881,7 @@ some(x => x === 2,
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>sort((a, b) => a - b, [5, 7, 3, 2]) // => iterableOf(2, 3, 5, 7)</code></pre>
+    <pre class="prettyprint"><code>sort((a, b) => a - b, [5, 7, 3, 2]) // => (2 3 5 7)</code></pre>
 
 
 
@@ -1930,7 +1931,7 @@ some(x => x === 2,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line529">line 529</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line578">line 578</a>
     </li></ul></dd>
     
 
@@ -1947,8 +1948,10 @@ some(x => x === 2,
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>sortBy(x => x.value, [{value: 7}, {value: 0}, {value: 7}, {value: 3}])
-// => iterableOf({value: 0}, {value: 3}, {value: 7}, {value: 7})</code></pre>
+    <pre class="prettyprint"><code>sortBy(
+  x => x.value,
+  [{value: 7}, {value: 0}, {value: 7}, {value: 3}]
+) // => ({value: 0} {value: 3} {value: 7} {value: 7})</code></pre>
 
 
 
@@ -1998,7 +2001,7 @@ some(x => x === 2,
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line546">line 546</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line595">line 595</a>
     </li></ul></dd>
     
 
@@ -2015,9 +2018,9 @@ some(x => x === 2,
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>const splitEveryThree = splitEvery(3)
-splitEveryThree([1, 2, 3, 4]) // => iterableOf(iterableOf(1, 2, 3), iterableOf(4))
-splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterableOf(4, 5, 6), iterableOf(7, 8, 9), ...)</code></pre>
+    <pre class="prettyprint"><code>const splitEveryTwo = splitEvery(2)
+splitEveryTwo([1, 2, 3, 4, 5]) // => ((1 2) (3 4) (5))
+splitEveryTwo(range(1, Infinity)) // => ((1 2) (3 4) (5 6) (7 8) (9 10) (11 12) (13 14) (15 16) (17 18) (19 20)...)</code></pre>
 
 
 
@@ -2067,7 +2070,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line590">line 590</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line642">line 642</a>
     </li></ul></dd>
     
 
@@ -2085,7 +2088,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>take(3,
-     range(1, Infinity)) // => iterableOf(1, 2, 3)</code></pre>
+     range(1, Infinity)) // => (1 2 3)</code></pre>
 
 
 
@@ -2135,7 +2138,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line604">line 604</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line656">line 656</a>
     </li></ul></dd>
     
 
@@ -2153,7 +2156,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>takeWhile(x => x &lt; 5,
-          range(1, Infinity)) // => iterableOf(1, 2, 3, 4)</code></pre>
+          range(1, Infinity)) // => (1 2 3 4)</code></pre>
 
 
 
@@ -2203,7 +2206,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line650">line 650</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line699">line 699</a>
     </li></ul></dd>
     
 
@@ -2220,12 +2223,10 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>zip([2, 3, 5, 7], range(1, Infinity)) // => iterableOf(
-                                      //      iterableOf(2, 1),
-                                      //      iterableOf(3, 2),
-                                      //      iterableOf(5, 3),
-                                      //      iterableOf(7, 4)
-                                      //    )</code></pre>
+    <pre class="prettyprint"><code>zip(
+  [2, 3, 5, 7],
+  range(1, Infinity)
+) // => ((2 1) (3 2) (5 3) (7 4))</code></pre>
 
 
 
@@ -2275,7 +2276,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line675">line 675</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line721">line 721</a>
     </li></ul></dd>
     
 
@@ -2296,7 +2297,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
   (a, b) => a + b
   [2, 3, 5, 7],
   range(1, Infinity)
-) // => iterableOf(3, 5, 8, 11)</code></pre>
+) // => (3 5 8 11)</code></pre>
 
 
 
@@ -2411,7 +2412,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line319">line 319</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line364">line 364</a>
     </li></ul></dd>
     
 
@@ -2456,7 +2457,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>cycle([1, 2, 3]) // => iterableOf(1, 2, 3, 1, 2, 3, 1, 2, 3, ...)</code></pre>
+    <pre class="prettyprint"><code>cycle([1, 2, 3]) // => (1 2 3 1 2 3 1 2 3 1...)</code></pre>
 
 
 
@@ -2565,7 +2566,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line187">line 187</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line206">line 206</a>
     </li></ul></dd>
     
 
@@ -2610,7 +2611,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>flatten([1, [2, [3, [[4]]]], [range(1, Infinity)]) // => iterableOf(1, 2, 4, 4, 1, 2, 3, 4, 5, 6, 7, 8, ...)</code></pre>
+    <pre class="prettyprint"><code>flatten([1, [2, [3, [[4]]]], [range(1, Infinity)]) // => (1 2 4 4 1 2 3 4 5 6...)</code></pre>
 
 
 
@@ -2719,12 +2720,23 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line198">line 198</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line220">line 220</a>
     </li></ul></dd>
     
 
     
 
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#init">init</a></li>
+        
+            <li><a href="global.html#last">last</a></li>
+        
+            <li><a href="global.html#tail">tail</a></li>
+        </ul>
+    </dd>
     
 
     
@@ -2765,6 +2777,171 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>head(range(1, Infinity)) // => 1</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="init"><span class="type-signature"></span>init<span class="signature">(xs)</span><span class="type-signature"> &rarr; {Iterable}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns a new iterable of all but the last element of the given iterable
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>xs</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Iterable</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line231">line 231</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#head">head</a></li>
+        
+            <li><a href="global.html#last">last</a></li>
+        
+            <li><a href="global.html#tail">tail</a></li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Iterable</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>init(range(1, 5)) // => (1 2 3 4)</code></pre>
 
 
 
@@ -2873,7 +3050,7 @@ splitEveryThree(range(1, Infinity)) // => iterableOf(iterableOf(1, 2, 3), iterab
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line262">line 262</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line304">line 304</a>
     </li></ul></dd>
     
 
@@ -3020,7 +3197,7 @@ isEmpty([0]) // => false</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line278">line 278</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line320">line 320</a>
     </li></ul></dd>
     
 
@@ -3174,12 +3351,23 @@ isEmpty([0]) // => false</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line303">line 303</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line348">line 348</a>
     </li></ul></dd>
     
 
     
 
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#head">head</a></li>
+        
+            <li><a href="global.html#init">init</a></li>
+        
+            <li><a href="global.html#tail">tail</a></li>
+        </ul>
+    </dd>
     
 
     
@@ -3328,7 +3516,7 @@ isEmpty([0]) // => false</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line311">line 311</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line356">line 356</a>
     </li></ul></dd>
     
 
@@ -3505,7 +3693,7 @@ isEmpty([0]) // => false</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line460">line 460</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line507">line 507</a>
     </li></ul></dd>
     
 
@@ -3551,8 +3739,8 @@ isEmpty([0]) // => false</code></pre>
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>const repeat42 = repeat(42)
-repeat42(3)) // => iterableOf(42, 42, 42)
-repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</code></pre>
+repeat42(3)) // => (42 42 42)
+repeat42(Infinity)) // => (42 42 42 42 42 42 42 42 42 42...)</code></pre>
 
 
 
@@ -3661,7 +3849,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line470">line 470</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line517">line 517</a>
     </li></ul></dd>
     
 
@@ -3706,7 +3894,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>reverse([1, 2, 3]) // => iterableOf(3, 2, 1)</code></pre>
+    <pre class="prettyprint"><code>reverse([1, 2, 3]) // => (3 2 1)</code></pre>
 
 
 
@@ -3815,7 +4003,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line562">line 562</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line611">line 611</a>
     </li></ul></dd>
     
 
@@ -3969,12 +4157,23 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line574">line 574</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line626">line 626</a>
     </li></ul></dd>
     
 
     
 
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="global.html#head">head</a></li>
+        
+            <li><a href="global.html#init">init</a></li>
+        
+            <li><a href="global.html#last">last</a></li>
+        </ul>
+    </dd>
     
 
     
@@ -4014,7 +4213,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>tail(range(1, Infinity)) // => iterableOf(2, 3, 4, 5, 6, 7, 8, 9, ...)</code></pre>
+    <pre class="prettyprint"><code>tail(range(1, Infinity)) // => (2 3 4 5 6 7 8 9 10 11...)</code></pre>
 
 
 
@@ -4123,7 +4322,7 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="index.js.html">index.js</a>, <a href="index.js.html#line618">line 618</a>
+        <a href="index.js.html">index.js</a>, <a href="index.js.html#line670">line 670</a>
     </li></ul></dd>
     
 
@@ -4168,11 +4367,11 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>transpose([[1, 2, 3],
-                    [4, 5, 6],
-                    [7, 8, 9]]) // => iterableOf(iterableOf(1, 4, 7),
-                                //               iterableOf(2, 5, 8),
-                                //               iterableOf(3, 6, 9))</code></pre>
+    <pre class="prettyprint"><code>transpose([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+]) // => ((1 4 7) (2 5 8) (3 6 9))</code></pre>
 
 
 
@@ -4192,13 +4391,13 @@ repeat42(Infinity)) // => iterableOf(42, 42, 42, 42, 42, 42, 42, 42, 42...)</cod
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#adjust">adjust</a></li><li><a href="global.html#append">append</a></li><li><a href="global.html#assoc">assoc</a></li><li><a href="global.html#concat">concat</a></li><li><a href="global.html#cycle">cycle</a></li><li><a href="global.html#drop">drop</a></li><li><a href="global.html#dropWhile">dropWhile</a></li><li><a href="global.html#every">every</a></li><li><a href="global.html#filter">filter</a></li><li><a href="global.html#find">find</a></li><li><a href="global.html#findIndex">findIndex</a></li><li><a href="global.html#flatten">flatten</a></li><li><a href="global.html#head">head</a></li><li><a href="global.html#insert">insert</a></li><li><a href="global.html#insertAll">insertAll</a></li><li><a href="global.html#intersperse">intersperse</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#iterableFrom">iterableFrom</a></li><li><a href="global.html#iterableOf">iterableOf</a></li><li><a href="global.html#iterate">iterate</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#length">length</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#nth">nth</a></li><li><a href="global.html#partition">partition</a></li><li><a href="global.html#prepend">prepend</a></li><li><a href="global.html#range">range</a></li><li><a href="global.html#reduce">reduce</a></li><li><a href="global.html#reject">reject</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#repeat">repeat</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#some">some</a></li><li><a href="global.html#sort">sort</a></li><li><a href="global.html#sortBy">sortBy</a></li><li><a href="global.html#splitEvery">splitEvery</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#tail">tail</a></li><li><a href="global.html#take">take</a></li><li><a href="global.html#takeWhile">takeWhile</a></li><li><a href="global.html#transpose">transpose</a></li><li><a href="global.html#zip">zip</a></li><li><a href="global.html#zipWith">zipWith</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#adjust">adjust</a></li><li><a href="global.html#append">append</a></li><li><a href="global.html#assoc">assoc</a></li><li><a href="global.html#concat">concat</a></li><li><a href="global.html#cycle">cycle</a></li><li><a href="global.html#drop">drop</a></li><li><a href="global.html#dropWhile">dropWhile</a></li><li><a href="global.html#every">every</a></li><li><a href="global.html#filter">filter</a></li><li><a href="global.html#find">find</a></li><li><a href="global.html#findIndex">findIndex</a></li><li><a href="global.html#flatten">flatten</a></li><li><a href="global.html#head">head</a></li><li><a href="global.html#init">init</a></li><li><a href="global.html#insert">insert</a></li><li><a href="global.html#insertAll">insertAll</a></li><li><a href="global.html#intersperse">intersperse</a></li><li><a href="global.html#isEmpty">isEmpty</a></li><li><a href="global.html#iterableFrom">iterableFrom</a></li><li><a href="global.html#iterableOf">iterableOf</a></li><li><a href="global.html#iterate">iterate</a></li><li><a href="global.html#last">last</a></li><li><a href="global.html#length">length</a></li><li><a href="global.html#map">map</a></li><li><a href="global.html#nth">nth</a></li><li><a href="global.html#partition">partition</a></li><li><a href="global.html#prepend">prepend</a></li><li><a href="global.html#range">range</a></li><li><a href="global.html#reduce">reduce</a></li><li><a href="global.html#reject">reject</a></li><li><a href="global.html#remove">remove</a></li><li><a href="global.html#repeat">repeat</a></li><li><a href="global.html#reverse">reverse</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#some">some</a></li><li><a href="global.html#sort">sort</a></li><li><a href="global.html#sortBy">sortBy</a></li><li><a href="global.html#splitEvery">splitEvery</a></li><li><a href="global.html#sum">sum</a></li><li><a href="global.html#tail">tail</a></li><li><a href="global.html#take">take</a></li><li><a href="global.html#takeWhile">takeWhile</a></li><li><a href="global.html#transpose">transpose</a></li><li><a href="global.html#zip">zip</a></li><li><a href="global.html#zipWith">zipWith</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Apr 11 2016 18:31:11 GMT+0100 (BST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> on Mon Aug 22 2016 22:56:20 GMT+0100 (BST)
 </footer>
 
 <script> prettyPrint(); </script>
